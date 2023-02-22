@@ -1,20 +1,22 @@
 <template>
-  <img alt="casal" src="./assets/couple.jpg">
-  
+  <NavBar />
   <HelloWorld msg="Maciel e Isadora"/>
-  <GiftList msg="Welcome to Your Vue.js App"/>
+  <GiftList />
+
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import GiftList from './components/GiftList.vue'
+import NavBar from './components/NavBar.vue';
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    GiftList
-  }
+    GiftList,
+    NavBar
+}
 }
 </script>
 
@@ -27,7 +29,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #376367;
-  margin: 0;
 }
 
 img{
